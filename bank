@@ -49,7 +49,7 @@ void customer()
 void main()
 {
     int ch;
-    printf("1. for bank details\n2. for employees details\n3. for customer\n ENTER YOUR CHOICE : ");
+    printf("1. for bank details\n2. for employees details\n3. for customer\n4. to exit\nENTER YOUR CHOICE : ");
     switch (ch)
     {
     case 1:
