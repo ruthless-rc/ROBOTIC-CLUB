@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void library()
+{
+    int p_code,l_pno;
+    char l_address[100];
+    printf("enter library address : ");
+    scanf("%s",&l_address);
+    printf("%s",l_address);
+    printf("\nenter library phone number : ");
+    scanf("%d",&l_pno);
+    printf("%d",l_pno);
+    printf("\nenter library pin code: ");
+    scanf("%d",&p_code);
+    printf("%d",p_code);
+}
+void librarian()
+{
+    char lib_name[100],lib_address[100];
+    int lib_pno;
+    printf("enter librarian name : ");
+    scanf("%s",&lib_name);
+    printf("%s",lib_name);
+    printf("\nenter librarian address : ");
+    scanf("%s",&lib_address);
+    printf("%s",lib_address);
+    printf("\nenter librarian phone number : ");
+    scanf("%d",&lib_pno);
+    printf("%d",lib_pno);
+}
+void students()
+{
+    char stu_name[100],stu_address[100],stu_dis[100];
+    int stu_pno;
+    printf("enter student name : ");
+    scanf("%s",&stu_name);
+    printf("%s",stu_name);
+    printf("\nenter student address : ");
+    scanf("%s",stu_address);
+    printf("%s",stu_address);
+    printf("\nenter student phone number : ");
+    scanf("%d",&stu_pno);
+    printf("%d",stu_pno);
+    printf("\nenter student phone book : ");
+    scanf("%s",&stu_dis);
+    printf("%s",stu_dis);
+}
+void main()
+{
+    int ch;
+    printf("1. for library details\n2. for librarian details\n3. for students\n4. to exit\n ENTER YOUR CHOICE : ");
+    switch (ch)
+    {
+    case 1:
+        library();
+        break;
+    case 2:
+        librarian();
+        break;
+    case 3:
+        students();
+        break;
+    case 4:
+        exit;
+        break;
+    default:
+        break;
+    }
+}
