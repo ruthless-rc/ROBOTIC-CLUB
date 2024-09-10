@@ -1,0 +1,175 @@
+int led=13;
+int led1=12;
+int led2=11;
+int led3=10;
+void setup() {
+  pinMOde(led, OUTPUT);
+  pinMOde(led1, OUTPUT);
+  pinMOde(led2, OUTPUT);
+  pinMOde(led3, OUTPUT);
+
+}
+
+void loop() {
+ 
+}
+void zero(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void one(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void two(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void three(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void four(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void five(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void six(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void seven(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, LOW);
+  delay(1000);
+}
+void eight(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void nine(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void ten(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void eleven(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, LOW);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void twelve(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void thirteen(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, LOW);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void fourteen(){
+  digitalWrite(led, LOW);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
+void fifteen(){
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led1, HIGH);
+  delay(1000);
+  digitalWrite(led2, HIGH);
+  delay(1000);
+  digitalWrite(led3, HIGH);
+  delay(1000);
+}
