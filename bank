@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void bank()
+{
+    int p_code,b_pno;
+    char b_address[100];
+    printf("enter bank address : ");
+    scanf("%s",&b_address);
+    printf("%s",b_address);
+    printf("\nenter bank phone number : ");
+    scanf("%d",&b_pno);
+    printf("%d",b_pno);
+    printf("\nenter bank pin code: ");
+    scanf("%d",&p_code);
+    printf("%d",p_code);
+}
+void employees()
+{
+    char empl_name[100],emp_address[100];
+    int empl_pno;
+    printf("enter employee name : ");
+    scanf("%s",&empl_name);
+    printf("%s",empl_name);
+    printf("\nenter employee address : ");
+    scanf("%s",&emp_address);
+    printf("%s",emp_address);
+    printf("\nenter employee phone number : ");
+    scanf("%d",&empl_pno);
+    printf("%d",empl_pno);
+}
+void customer()
+{
+    char cust_name[100],cust_address[100];
+    int cust_pno,cust_accno;
+    printf("enter customer name : ");
+    scanf("%s",&cust_name);
+    printf("%s",cust_name);
+    printf("\nenter customer address : ");
+    scanf("%s",cust_address);
+    printf("%s",cust_address);
+    printf("\nenter customer phone number : ");
+    scanf("%d",&cust_pno);
+    printf("%d",cust_pno);
+    printf("\nenter customer phone number : ");
+    scanf("%d",&cust_accno);
+    printf("%d",cust_accno);
+}
+void main()
+{
+    int ch;
+    printf("1. for bank details\n2. for employees details\n3. for customer\n ENTER YOUR CHOICE : ");
+    switch (ch)
+    {
+    case 1:
+        bank();
+        break;
+    case 2:
+        employees();
+        break;
+    case 3:
+        customer();
+        break;
+    case 4:
+        exit;
+        break;
+    default:
+        break;
+    }
+}
