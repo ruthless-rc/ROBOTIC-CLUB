@@ -1,0 +1,70 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void hospital()
+{
+    int p_code,h_pno;
+    char h_address[100];
+    printf("enter hospital address : ");
+    scanf("%s",&h_address);
+    printf("%s",h_address);
+    printf("\nenter hospital phone number : ");
+    scanf("%d",&h_pno);
+    printf("%d",h_pno);
+    printf("\nenter hospital pin code: ");
+    scanf("%d",&p_code);
+    printf("%d",p_code);
+}
+void doctors()
+{
+    char doc_name[100],doc_address[100];
+    int doc_pno;
+    printf("enter doctor name : ");
+    scanf("%s",&doc_name);
+    printf("%s",doc_name);
+    printf("\nenter doctor address : ");
+    scanf("%s",&doc_address);
+    printf("%s",doc_address);
+    printf("\nenter doctor phone number : ");
+    scanf("%d",&doc_pno);
+    printf("%d",doc_pno);
+}
+void patients()
+{
+    char pat_name[100],pat_address[100],pat_dis[100];
+    int pat_pno;
+    printf("enter customer name : ");
+    scanf("%s",&pat_name);
+    printf("%s",pat_name);
+    printf("\nenter customer address : ");
+    scanf("%s",pat_address);
+    printf("%s",pat_address);
+    printf("\nenter customer phone number : ");
+    scanf("%d",&pat_pno);
+    printf("%d",pat_pno);
+    printf("\nenter customer phone number : ");
+    scanf("%s",&pat_dis);
+    printf("%s",pat_dis);
+}
+void main()
+{
+    int ch;
+    printf("1. for hospital details\n2. for doctor details\n3. for patients\n4. to exit\n ENTER YOUR CHOICE : ");
+    switch (ch)
+    {
+    case 1:
+        hospital();
+        break;
+    case 2:
+        doctors();
+        break;
+    case 3:
+        patients();
+        break;
+    case 4:
+        exit;
+        break;
+    default:
+        break;
+    }
+}
