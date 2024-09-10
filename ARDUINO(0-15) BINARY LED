@@ -11,7 +11,22 @@ void setup() {
 }
 
 void loop() {
- 
+  zero();
+  one();
+  two();
+  three();
+  four();
+  five();
+  six();
+  seven();
+  eight();
+  nine();
+  ten();
+  eleven();
+  twelve();
+  thirteen();
+  fourteen();
+  fifteen();
 }
 void zero(){
   digitalWrite(led, LOW);
