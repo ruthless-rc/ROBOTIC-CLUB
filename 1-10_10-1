@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+    int a;
+    for(a=1;a<=10;a++)
+    {
+        printf("%d\n",a);
+    }
+    printf("REVERSED\n");
+    for(a=10;a>0;a--)
+    {
+        printf("%d\n",a);
+    }
+}
