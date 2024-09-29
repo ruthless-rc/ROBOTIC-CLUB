@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,result=1;
+    printf("enter base : ");
+    scanf("%d",&a);
+    printf("enter exponent : ");
+    scanf("%d",&b);
+    while(b!=0)
+    {
+        result *= a;
+        --b;
+    }
+    printf("%d",result);
+}
