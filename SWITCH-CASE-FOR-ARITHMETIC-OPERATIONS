@@ -1,0 +1,29 @@
+#include<stdio.h>
+
+int main(){
+    int a,b,sum,min,div,mul,choice;
+    printf("1. for sum\n2. for min\n3. for mul\n4. for div\n enter your choicse : ");
+    scanf("%d",&choice);
+    printf("enter number 1 : ");
+    scanf("%d",&a);
+    printf("enter number 2 : ");
+    scanf("%d",&b);
+    switch(choice)
+    {
+        case 1:
+            printf("%d",a+b);
+            break;
+        case 2:
+            printf("%d",a-b);
+            break;
+        case 3:
+            printf("%d",a*b);
+            break;
+        case 4: 
+            printf("%d",a/b);
+            break;
+        default:
+            printf("invalid output!");
+            break;
+    }
+}
