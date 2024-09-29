@@ -1,0 +1,36 @@
+#include<stdio.h>
+
+int main(){
+    int l,b,s,r,ba,he,hy,ra,rp,sa,sp,ca,cc,ta,tp;
+    printf("***************************FOR RECTANGLE***********************************");
+    printf("enter length of rectangle : ");
+    scanf("%d",&l);
+    printf("enter width of rectangle : ");
+    scanf("%d",&b);
+    ra=l*b;
+    rp=2*(l+b);
+    printf("area of rectangle is %d\nperimeter of rectangle is %d",ra,rp);
+    printf("***************************FOR SQUARE***********************************");
+    printf("enter side of square: ");
+    scanf("%d",&s);
+    sa=s*s;
+    sp=4*s;
+    printf("area of square is %d\nperimeter of square is %d",sa,sp);
+    printf("***************************FOR CIRCLE***********************************");
+    printf("enter radius: ");
+    scanf("%d",&r);
+    ca=3.14*(r*r);
+    cc=(2*(3.14)*r);
+    printf("area of circle is %d\nperimeter of circle is %d",ca,cc);
+    printf("***************************FOR triangle***********************************");
+    printf("enter base of triangle : ");
+    scanf("%d",&ba);
+    printf("enter height of triangle : ");
+    scanf("%d",&he);
+    printf("enter hypotenuse of triangle : ");
+    printf("%d",&hy);
+    ta=0.5*(ba*he);
+    tp=ba+he+hy;
+    printf("area of triangle is %d",ta);
+    printf("perimeter of triagnle is %d",tp);
+}
