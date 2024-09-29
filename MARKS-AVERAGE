@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int c,d,ds,dm,avg;
+    printf("enter marks in c language : ");
+    scanf("%d",&c);
+    printf("enter marks in dbms : ");
+    scanf("%d",&d);
+    printf("enter marks in dsa : ");
+    scanf("%d",&ds);
+    printf("enter marks in dm : ");
+    scanf("%d",&dm);
+    avg=(c+ds+dm+d)/4;
+    if(avg>90)
+    {
+        printf("A");
+    }
+    else if(avg>80){
+        printf("B+");
+    }
+    else if(avg>70){
+        printf("B");
+    }
+    else if(avg>60){
+        printf("C+");
+    }
+    else if(avg>50){
+        printf("C");
+    }
+    else if(avg>40){
+        printf("D");
+    }
+    else{
+        printf("fail");
+    }
+}
