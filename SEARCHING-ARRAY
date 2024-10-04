@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main()
+{
+  int a[5]={1,2,3,4,5},i,b[5],s;
+  printf("enter elment to search : ");
+  scanf("%d",&s);
+  for(i=0;i<5;i++)
+  {
+    if(a[i]==s)
+    {
+      printf("elment %d is at a[%d]",s,i);
+      break;
+    }
+  }
+}
