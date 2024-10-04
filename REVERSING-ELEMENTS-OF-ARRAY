@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+  int a[5]={1,2,3,4,5},i;
+  for(i=0;i<5;i++)
+  {
+    printf("enter elements %d : ",i);
+    scanf("%d",&a[i]);
+  }
+  printf("before reversing\n");
+  for(i=0;i<5;i++)
+  {
+    printf("%d\t",a[i]);
+  }
+  printf("\nafter reversing\n");
+  for(i=4;i>=0;--i)
+  {
+    printf("%d\t",a[i]);
+  }
+}
