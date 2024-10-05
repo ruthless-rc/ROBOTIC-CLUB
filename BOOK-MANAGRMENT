@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <math.h>
+
+struct book
+{
+  int b_code;
+  char b_title[20];
+  char b_writer_name[20];
+  int b_price;
+  int b_edition;
+  int b_copies;
+};
+int main()
+{
+  struct book b1;
+  b1.b_code = 1;
+  strcpy(b1.b_title, "abcd");
+  strcpy(b1.b_writer_name,"wxyz");
+  b1.b_price=200;
+  b1.b_edition=2024;
+  b1.b_copies=123;
+
+  printf("book code  : %d",b1.b_code);
+  printf("\nbook title  : %s",b1.b_title);
+  printf("\nbook writer name  : %s",b1.b_writer_name);
+  printf("\nbook price  : %d",b1.b_price);
+  printf("\nbook editoin  : %d",b1.b_edition);
+  printf("\nbook copies  : %d",b1.b_copies);
+}
