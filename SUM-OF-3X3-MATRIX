@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+#define SIZE 3 // Define the size of the matrix
+
+int main() {
+    int matrix[SIZE][SIZE];
+    int rowSum[SIZE] = {0}; 
+    int colSum[SIZE] = {0}; 
+    int diagonalSum1 = 0;   
+    int diagonalSum2 = 0;   
+
+    printf("Enter elements of the 3x3 matrix:\n");
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            printf("Element [%d][%d]: ", i, j);
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    for (int i = 0; i < SIZE; i++) {
+        for (int j = 0; j < SIZE; j++) {
+            rowSum[i] += matrix[i][j];
+            colSum[j] += matrix[i][j];
+            if (i == j) {
+                diagonalSum1 += matrix[i][j];
+            }
+            if (i + j == SIZE - 1) {
+                diagonalSum2 += matrix[i][j];
+            }
+        }
+    }
+
+    printf("\nRow Sums:\n");
+    for (int i = 0; i < SIZE; i++) {
+        printf("Sum of row %d: %d\n", i, rowSum[i]);
+    }
+
+    printf("\nColumn Sums:\n");
+    for (int j = 0; j < SIZE; j++) {
+        printf("Sum of column %d: %d\n", j, colSum[j]);
+    }
+
+    printf("\nSum of primary diagonal: %d\n", diagonalSum1);
+    printf("Sum of secondary diagonal: %d\n", diagonalSum2);
+
+    return 0;
+}
