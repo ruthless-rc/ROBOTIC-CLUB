@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int integer;
+    float realNumber;
+    char character;
+
+    printf("Enter an integer: ");
+    scanf("%d", &integer);
+
+    printf("Enter a real number (float): ");
+    scanf("%f", &realNumber);
+
+    printf("Enter a character: ");
+    scanf(" %c", &character);  
+
+    printf("You entered integer: %d\n", integer);
+    printf("You entered real number: %.2f\n", realNumber);
+    printf("You entered character: %c\n", character);
+
+    return 0;
+}
