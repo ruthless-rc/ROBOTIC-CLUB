@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void power(int base, int exponent, long long *result) {
+    *result = 1; 
+    for (int i = 0; i < exponent; i++) {
+        *result *= base;
+    }
+}
+
+int main() {
+    int base, exponent;
+    long long result;
+
+    printf("Enter base: ");
+    scanf("%d", &base);
+    printf("Enter exponent: ");
+    scanf("%d", &exponent);
+
+    power(base, exponent, &result);
+
+    printf("%d raised to the power of %d is: %lld\n", base, exponent, result);
+
+    return 0;
+}
