@@ -1,0 +1,25 @@
+int Flame = 2;
+#define LED  12
+#define buzzer  9
+void setup() {
+  pinMode(Flame, INPUT);
+  pinMode(LED, OUTPUT);
+  pinMode(buzzer,OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  if (digitalRead(Flame) == LOW) {
+    Serial.println("Flame Detected");
+    digitalWrite(LED, 0);
+    digitalWrite(buzzer, 1);
+
+    
+  }
+  else{
+    Serial.println("flame not detected");
+    digitalWrite(LED, 1);
+    digitalWrite(buzzer, 0);
+  }
+  delay(100);
+}
